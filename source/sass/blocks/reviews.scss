@@ -1,0 +1,85 @@
+.reviews {
+	margin-top: 330px;
+	background-color: $light-green;
+	height: 200px;
+	padding-top: 85px;
+	min-height: 725px;
+	.page-title {
+
+	}
+}
+.reviews__list {
+	@include list-reset(0px);
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 65px;
+}
+.reviews__item {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+
+}
+.reviews__user-pic {
+	width: 101px;
+	height: 101px;
+	border-radius: 50%;
+	background-color: tomato;
+}
+.reviews__user-info {
+	width: 66%;
+}
+.reviews__user-name {
+	margin: 0;
+	font-family: "Circe", "Arial", sans-serif;
+	font-size: 19px;
+	line-height: 30px;
+	font-weight: 400;
+}
+.reviews__text {
+	margin: 0;
+	font-family:"Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+}
+.reviews-quote__list {
+	@include list-reset(0px);
+	display: flex;
+	justify-content: space-around;
+}
+.reviews-quote__item {
+	font-family:"Arial", sans-serif;
+}
+.reviews-quote__text {
+	position: relative;
+	width: 400px;
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: 400;
+	&:before {
+		position: absolute;
+		content: "«";
+		font-family:"Arial", sans-serif;
+		font-size: 117px;
+		top: 30px;
+		left: -75px;
+		color: #9ae2b7;
+		opacity: .6;
+	}
+	&:after {
+		position: absolute;
+		content: "»";
+		font-family:"Arial", sans-serif;
+		font-size: 117px;
+			right: -66px;
+		top: 8px;
+		color: #9ae2b7;
+		opacity: .6;
+	}
+}
+.reviews-quote__author {
+	font-size: 16px;
+	line-height: 	32px;
+	font-style: italic;
+	text-align: right;
+}

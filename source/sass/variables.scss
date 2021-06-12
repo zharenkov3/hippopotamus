@@ -1,0 +1,36 @@
+// $mobile-width: 320px;
+// $tablet-width: 768px;
+// $desktop-width: 1440px;
+
+// $tablet-min-width: ($tablet-width + 1);
+// $tablet-max-width: ($desktop-width - 1);
+
+$retina-dpi: 144dpi;
+
+// $min660: #{"(min-width: $tablet-width)"};
+// $min960: #{"(min-width: $desktop-width)"};
+
+// $tablet-only: ~"(min-width: @{tablet-min-width}) and (max-width: @{tablet-max-width})";
+//
+// $retina: ~"(min-resolution: @{retina-dpi})";
+
+$font-family-base: "Circe", "Arial", sans-serif;
+$font-size-base: 14px;
+$line-height-base: 24px;
+
+$black: #000000;
+// $dark-blue: #283645;
+// $gray: #dddfe0;
+$green: #88e7a5;
+$light-green: #DEE7E1;
+$dark-green: #5b675e;
+// $lightgray: #e5e5e5;
+// $pink: #d22856;
+// $silver: #f2f2f2;
+$white: #ffffff;
+
+// $bg-color-body: $white;
+// $bg-color-header: @dark-blue;
+
+// $font-color-base: $black;
+

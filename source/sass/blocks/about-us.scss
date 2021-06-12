@@ -1,0 +1,136 @@
+.about-us {
+	font-family:  "Arial", sans-serif;
+	.page-title {
+		max-width: 468px;
+	}
+	.page-description {
+		@include max768 {
+			padding: 0 20px;
+			.br-desktop {
+				display: none;
+			}
+		}
+	}
+}
+
+.about-us__numbers {
+	background-color: $light-green;
+	.container--1440 {
+		@include max1250 {
+			padding: 0 20px;
+			max-width: 932px;
+		}
+		@include max768 {
+			max-width: 700px;
+		}
+	}
+}
+
+.about-us__numbers-list {
+	@include list-reset(0px);
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	@include max1250 {
+		// flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: 	space-around;
+	}
+}
+.about-us__numbers-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 224px;
+	height: 241px;
+	margin-right: 10px;
+	@include max1440 {
+		height: 221px;
+	}
+	@include min1250{
+		width: (100%/6);
+	}
+	@include max1250 {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 113px;
+		width: 46%;
+	}
+	@include max768 {
+		width: 100%;
+		justify-content: 	space-around	;
+	}
+	&:before {
+		position: absolute;
+		content: "";
+		width: 2px;
+		height: 100%;
+		top: 0px;
+		left: -10px;
+		background-color: $white;
+		@include max768 {
+			display: none;
+		}
+		@include max1250 {
+			left: -15px;
+		}
+	}
+	&:first-child {
+		&:before {
+			display: none;
+			@include max1250 {
+				display: block;
+			}
+			@include max768 {
+				display: none;
+			}
+		}
+	}
+}
+.about-us__numbers-item__number {
+	display: block;
+	margin-top: 30px;
+	padding: 0 5px;
+	font-family: "Circe", "Arial", sans-serif;
+	font-weight: 800;
+	color: $dark-green;
+	margin-bottom: 0;
+	@include min1440 {
+		font-size: 133px;
+		line-height: 133px;
+	}
+	@include max1440 {
+		font-size: 100px;
+		line-height: 100px;
+	}
+	@include max1024 {
+		font-size: 83px;
+		line-height: 83px;
+	}
+	@include max768 {
+		margin-top: 0;
+	}
+
+}
+.about-us__numbers-item__description {
+	margin: 0;
+	padding: 0 10px;
+	// margin-bottom: 65px;
+	font-family: "Circe", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 28px;
+	text-align: center;
+	color: $dark-green;
+	@include max1024 {
+		margin-bottom: 10px;
+	}
+	@include max1250 {
+		display: block;
+		width: 200px;
+	}
+	@include max768 {
+		margin-bottom: 0;
+	}
+}
