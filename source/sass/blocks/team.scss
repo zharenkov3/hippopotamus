@@ -1,0 +1,88 @@
+.team {
+	.page-title {
+	}
+	.container {
+	}
+}
+.page-description {
+}
+.br-desktop {
+}
+.team__list {
+	@include list-reset(0px);
+	display: flex;
+	justify-content: space-between;
+}
+.team__item {
+	position: relative;
+	text-align: center;
+	width: 30%;
+	&:hover{
+		.team__social-list {
+			opacity: 1;
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			top: -20px;
+			left: -20px;
+			width: 98%;
+			height: 437px;
+			background-color: rgba(98, 204, 130, .8);
+		}
+	}
+
+}
+
+.team__person-photo {
+	img {
+		width: 345px;
+		height: 437px;
+	}
+
+
+}
+.team__social-list {
+	@include list-reset(0px);
+	position: absolute;
+	content: "";
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 208px;
+	height: 46px;
+	background-color: tomato;
+	opacity: .4;
+	z-index: 1;
+	&:hover{
+		z-index: 2;
+	}
+}
+.team__social__item {
+}
+.team__social__link {
+}
+.social-link--facebook {
+
+}
+.social-link--instagram {
+}
+.social-link--youtube {
+}
+.social-link--pinteest {
+}
+
+.team__name {
+	font-family: "Circe", "Arial", sans-serif;
+	font-size: 26px;
+	line-height: 38px;
+	font-weight: 400;
+}
+.team__position {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 400;
+}
+
+

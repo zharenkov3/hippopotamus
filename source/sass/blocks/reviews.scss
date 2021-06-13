@@ -5,7 +5,6 @@
 	padding-top: 85px;
 	min-height: 725px;
 	.page-title {
-
 	}
 }
 .reviews__list {
@@ -18,13 +17,13 @@
 	display: flex;
 	justify-content: space-between;
 	width: 30%;
-
 }
 .reviews__user-pic {
 	width: 101px;
 	height: 101px;
-	border-radius: 50%;
-	background-color: tomato;
+	img {
+		border-radius: 50%;
+	}
 }
 .reviews__user-info {
 	width: 66%;
@@ -49,6 +48,9 @@
 }
 .reviews-quote__item {
 	font-family:"Arial", sans-serif;
+	@include max1250 {
+		width: 100%;
+	}
 }
 .reviews-quote__text {
 	position: relative;
@@ -56,6 +58,10 @@
 	font-size: 20px;
 	line-height: 27px;
 	font-weight: 400;
+	@include max1250 {
+		width: 90%;
+		padding: 0 50px;
+	}
 	&:before {
 		position: absolute;
 		content: "«";
@@ -71,10 +77,16 @@
 		content: "»";
 		font-family:"Arial", sans-serif;
 		font-size: 117px;
-			right: -66px;
+		right: -66px;
 		top: 8px;
 		color: #9ae2b7;
 		opacity: .6;
+	}
+	@include max1250 {
+		&:after,
+		&:before {
+			display: none;
+		}
 	}
 }
 .reviews-quote__author {
@@ -82,4 +94,9 @@
 	line-height: 	32px;
 	font-style: italic;
 	text-align: right;
+	@include max1250 {
+		width: 90%;
+		padding: 0 50px;
+		margin: 0;
+	}
 }
