@@ -58,9 +58,9 @@ h1, h2, h3, h4, h5, b, p {
 	line-height: 32px;
 	font-weight: 400;
 	text-align: center;
-	a {
-		color: $green;
-	}
+}
+.link--green {
+	color: $green;
 }
 .button {
 	padding: 10px 10px;
@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, b, p {
 	text-decoration: none;
 	color: $white;
 	background-color: transparent;
+	@include min320-max768 {
+		max-width: 90%;
+		font-size: 22px;
+	}
 	&:hover {
 		box-shadow: 0px 0px 10px rgba(21, 39, 38, .4);
 	}
@@ -89,8 +93,8 @@ h1, h2, h3, h4, h5, b, p {
 	}
 }
 .button--border-green {
-		border: 6px solid $green;
-		color: $green;
+	border: 6px solid $green;
+	color: $green;
 	&:hover {
 		font-weight: 800;
 		background-color: rgba(255, 255, 255, .9);

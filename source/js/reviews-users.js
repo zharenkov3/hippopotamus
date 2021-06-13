@@ -1,4 +1,4 @@
-$('.services-gallery__list').slick({
+$('.reviews__list').slick({
   arrows: true,
   dots: true,
   mobileFirst: true,

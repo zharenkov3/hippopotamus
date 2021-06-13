@@ -1,0 +1,26 @@
+button.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+	border: none;
+	opacity: none;
+	background-color: transparent;
+	z-index: 10;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 0;
+	background-image: url("../img/arrow-white.svg");
+	&:hover {
+		background-image: url("../img/arrow-green.svg");
+	}
+}
+button.slick-next {
+	right: 5%;
+}
+button.slick-prev {
+	left: 5%;
+	transform: rotate(180deg) translateY(20px);
+}
