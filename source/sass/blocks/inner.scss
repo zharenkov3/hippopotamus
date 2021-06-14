@@ -5,9 +5,6 @@
 	@include max768 {
 		height: 500px;
 	}
-	// 	@include min1440 {
-	// 	height: 700px;
-	// }
 	@include min1920 {
 		height: 890px;
 	}
@@ -62,13 +59,13 @@
 
 }
 .inner__title {
+	padding: 0 10px;
+	margin-bottom: 5%;
 	font-size: 61px;
 	line-height: 58px;
 	text-align: center;
 	color: $white;
 	text-shadow: 0px 8px 32px rgba(21, 39, 38, 1);
-	margin-bottom: 5%;
-
 	@include max1024 {
 		font-size: 51px;
 	}

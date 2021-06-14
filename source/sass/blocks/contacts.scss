@@ -1,0 +1,110 @@
+.contacts {
+	padding-top: 86px;
+	padding-bottom: 72px;
+	.page-title {
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1116px;
+		@include max1024 {
+			flex-direction: column;
+			align-items: center;
+			margin: 0 auto;
+			max-width: 80%;
+		}
+	}
+	a {
+		margin-left: 86px;
+		font-family:"Arial", sans-serif;
+		font-size: 39.68px;
+		line-height: 49.02px;
+		color: $black;
+		text-decoration: none;
+		&:hover {
+			color: $green;
+		}
+		@include max1024 {
+			font-size: 28px;
+			margin-left: 70px;
+		}
+	}
+}
+.contacts__section-call {
+	@include max1024 {
+		order: 2;
+		margin-top: 50px;
+	}
+	a {
+		display: block;
+		margin-bottom: 60px;
+		@include max1024 {
+			margin-bottom: 20px;
+		}
+	}
+	max-width: 487px;
+	a[href^="tel:"] {
+		position: relative;
+		&:before {
+			position: absolute;
+			content: "";
+			top: -6px;
+			left: -85px;
+			width: 60px;
+			height: 60px;
+			background-image: url("../img/phone.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 0 0;
+			@include max1024 {
+				top: 5px;
+				left: -60px;
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	a[href^="mailto:"] {
+		position: relative;
+		&:after {
+			position: absolute;
+			content: "";
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 1px;
+			background-color: $green;
+		}
+		&:before {
+			position: absolute;
+			content: "";
+			top: -6px;
+			left: -85px;
+			width: 60px;
+			height: 60px;
+			background-image: url("../img/email.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: 0 0;
+			@include max1024 {
+				top: 5px;
+				left: -60px;
+				width: 40px;
+				height: 40px;
+			}
+		}
+		&:hover:after  {
+			display: none;
+		}
+	}
+}
+.contacts__adress-list {
+	max-width: 487px;
+
+}
+.adress-item {
+}
+.adress-item__office {
+}
+.adress-item__location {
+}

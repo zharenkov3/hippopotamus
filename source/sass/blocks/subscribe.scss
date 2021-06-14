@@ -1,0 +1,37 @@
+.subscribe {
+	margin-top: 103px;
+	margin-bottom: 73px;
+	.container {
+		max-width: 750px;
+	}
+}
+.subscribe-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	@include max768 {
+		flex-direction: column;
+	}
+	input {
+		padding: 5px 20px;
+		width: 48%;
+		height: 61px;
+		margin-bottom: 40px;
+		border: 1px solid $green;
+		font-family: "Arial", sans-serif;
+		font-style: italic;
+		font-size: 20px;
+		&:hover {
+			outline: 4px solid $green;
+		}
+		@include max768 {
+			margin: 0 20px 40px 20px;
+			width: 90%
+		}
+	}
+
+}
+.button {
+}
+.button--color-green {
+}

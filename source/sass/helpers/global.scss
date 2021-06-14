@@ -10,12 +10,9 @@ img {
 }
 html {
 	margin: 0;
-	// min-width: $mobile-width;
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
-	// color: $font-color-base;
-	// background-color: $bg-color-body;
 }
 body {
 	margin: 0;
@@ -29,6 +26,9 @@ body {
 }
 h1, h2, h3, h4, h5, b, p {
 	margin: 0;
+}
+.bg--light-green {
+	background-color: $light-green;
 }
 .page-title {
 	position: relative;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, b, p {
 	line-height: 32px;
 	font-weight: 400;
 	text-align: center;
+	padding: 20px;
 }
 .link--green {
 	color: $green;
@@ -65,7 +66,7 @@ h1, h2, h3, h4, h5, b, p {
 .button {
 	padding: 10px 10px;
 	display: block;
-	width: 371px;
+	width: $button-width;
 	margin: 0 auto;
 	font-family: 'Circe', "Arial", sans-serif;
 	font-size: 26px;
@@ -74,13 +75,15 @@ h1, h2, h3, h4, h5, b, p {
 	text-align: center;
 	text-decoration: none;
 	color: $white;
+	border:none;
+	outline: none;
 	background-color: transparent;
 	@include min320-max768 {
 		max-width: 90%;
 		font-size: 22px;
 	}
 	&:hover {
-		box-shadow: 0px 0px 10px rgba(21, 39, 38, .4);
+		// box-shadow: 0px 0px 10px rgba(21, 39, 38, .4);
 	}
 }
 .button--border-white {
@@ -100,5 +103,15 @@ h1, h2, h3, h4, h5, b, p {
 		background-color: rgba(255, 255, 255, .9);
 	}
 }
-.button--fcolor-white {}
-.button--color-green {}
+.button--color-green {
+	color: $white;
+	border: 6px solid $green;
+	background-color: $green;
+	&:hover {
+		font-weight: 800;
+		color: $green;
+		box-shadow: none;
+		border: 6px solid $green;
+		background-color: $white;
+	}
+}

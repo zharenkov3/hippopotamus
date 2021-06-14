@@ -4,6 +4,7 @@ $('.reviews__list').slick({
   mobileFirst: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: 2000,
   responsive: [
   {
     breakpoint: 320,

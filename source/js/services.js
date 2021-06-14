@@ -4,6 +4,7 @@ $('.services-gallery__list').slick({
   mobileFirst: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: 1500,
   responsive: [
   {
     breakpoint: 320,
