@@ -27,6 +27,7 @@
 }
 .successes__gallery-item {
 	width: 465px;
+	margin-bottom: 20px;
 	@include max1440 {
 		width: 32%;
 	}
