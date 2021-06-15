@@ -50,13 +50,18 @@
 		.successes__gallery-title {
 			opacity: 1;
 		}
-		.successes__img {
+	}
+	@include min768 {
+		&:hover {
+			.successes__img {
 			opacity: 0;
 		}
 	}
-	@include max768 {
-		background-color: transparent;
-	}
+}
+
+@include max768 {
+	background-color: transparent;
+}
 }
 .successes__gallery-title {
 	position: absolute;
