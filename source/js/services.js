@@ -7,7 +7,7 @@ $('.services-gallery__list').slick({
   autoplay: 1500,
   responsive: [
   {
-    breakpoint: 320,
+    breakpoint: 300,
     settings: {
       arrows: false
     }

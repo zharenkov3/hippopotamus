@@ -128,23 +128,25 @@
 .main-nav__list {
 	@include list-reset(0px);
 	display: flex;
+	@include min1440 {
+		margin-right: 26px;
+	}
 
 }
 .main-nav__item {
-	margin-right: 85px;
+	margin-right: 82px;
 	@include min768-max1024 {
 		margin-right: 55px;
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	a {
-		// width: auto;
-		// display: block;
 		color: $white;
 		text-decoration: none;
 		&:hover {
 			color: $green;
 		}
 	}
-	&:last-child {
-		margin-right: 0;
-	}
+
 }

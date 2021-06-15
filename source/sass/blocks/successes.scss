@@ -1,19 +1,23 @@
 .successes {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 35px;
+	padding-bottom: 50px;
 	.container {
 		max-width: 1440px;
 		padding: 0;
 		@include max1250 {
 			padding: 0 20px;
 		}
+		.page-title {
+		}
+		.page-description {
+			max-width: 865px;
+			margin: 0 auto;
+		}
 	}
-	.page-title {
-	}
-	.page-description {
-	}
+
 }
 .successes__gallery-list {
+	padding-top: 35px;
 	@include list-reset(0px);
 	display: flex;
 	flex-wrap: wrap;

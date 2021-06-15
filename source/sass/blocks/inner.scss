@@ -6,37 +6,41 @@
 		height: 500px;
 	}
 	@include min1920 {
-		height: 890px;
+		height: 750px;
 	}
 	position: relative;
 	height: 740px;
-	background-image: url("../img/header-bg.png"),
-	url("../img/inner-bg@1x-desktop.jpg");
+	background-image: url("../img/header-bg@1x-mobile.png"),
+	url("../img/inner-bg@1x-tablet.jpg");
 	background-position: center bottom, center bottom;
 	background-repeat: no-repeat, no-repeat;
 	background-size: contain, cover;
-	@include min1920 {
-		background-image: url("../img/header-bg.png"),
-		url("../img/inner-bg@1x-1920.jpg");
+	@include retina {
+		background-image: url("../img/header-bg@2x-mobile.png"),
+		url("../img/inner-bg@2x-tablet.jpg");
+	}
+	@include min320 {
+		background-image: url("../img/header-bg@1x-tablet.png"),
+		url("../img/inner-bg@1x-tablet.jpg");
 		@include retina {
-			background-image: url("../img/header-bg.png"),
-			url("../img/inner-bg@2x-1920.jpg");
+			background-image: url("../img/header-bg@2x-tablet.png"),
+			url("../img/inner-bg@2x-tablet.jpg");
 		}
 	}
-	@include max1920 {
-		background-image: url("../img/header-bg.png"),
+	@include min768-max1920 {
+		background-image: url("../img/header-bg@1x-desktop.png"),
 		url("../img/inner-bg@1x-desktop.jpg");
 		@include retina {
-			background-image: url("../img/header-bg.png"),
+			background-image: url("../img/header-bg@1x-desktop.png"),
 			url("../img/inner-bg@2x-desktop.jpg");
 		}
 	}
-	@include max768 {
-		background-image: url("../img/header-bg.png"),
-		url("../img/inner-bg@1x-tablet.jpg");
+	@include min1920 {
+		background-image: url("../img/header-bg@1x-1920.png"),
+		url("../img/inner-bg@1x-1920.jpg");
 		@include retina {
-			background-image: url("../img/header-bg.png"),
-			url("../img/inner-bg@2x-tablet.jpg");
+			background-image: url("../img/header-bg@1x-1920.png"),
+			url("../img/inner-bg@2x-1920.jpg");
 		}
 	}
 	.container {
@@ -49,6 +53,10 @@
 		padding-top: 10%;
 		@include min1250-max1440{
 			padding-top: 30%;
+		}
+		@include min1920 {
+			padding-top: 16%;
+			padding-bottom: 3%;
 		}
 	}
 	.button {

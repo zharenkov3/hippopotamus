@@ -7,7 +7,7 @@ $('.reviews__list').slick({
   autoplay: 2000,
   responsive: [
   {
-    breakpoint: 320,
+    breakpoint: 319,
     settings: {
       arrows: false
     }

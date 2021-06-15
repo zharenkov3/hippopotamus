@@ -1,4 +1,6 @@
 .about-us {
+	padding-top: 70px;
+	padding-bottom: 75px;
 	font-family:  "Arial", sans-serif;
 	.page-title {
 		max-width: 468px;
@@ -15,7 +17,8 @@
 
 .about-us__numbers {
 	background-color: $light-green;
-	.container--1440 {
+	.container {
+		max-width: 1480px;
 		@include max1250 {
 			padding: 0 20px;
 			max-width: 932px;
@@ -49,6 +52,9 @@
 	}
 	@include min1250{
 		width: (100%/6);
+	}
+	@include min768-max1920 {
+		margin-bottom: 10px;
 	}
 	@include max1250 {
 		flex-direction: row;
@@ -89,15 +95,15 @@
 }
 .about-us__numbers-item__number {
 	display: block;
-	margin-top: 30px;
+	margin-top: 45px;
 	padding: 0 5px;
 	font-family: "Circe", "Arial", sans-serif;
 	font-weight: 800;
 	color: $dark-green;
 	margin-bottom: 0;
 	@include min1440 {
-		font-size: 133px;
-		line-height: 133px;
+		font-size: 117px;
+		line-height: 100px;
 	}
 	@include max1440 {
 		font-size: 100px;

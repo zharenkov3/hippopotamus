@@ -35,8 +35,9 @@ h1, h2, h3, h4, h5, b, p {
 	position: relative;
 	max-width: 468px;
 	margin: 0 auto;
-	margin-top: 80px;
-	margin-bottom: 85px;
+	// margin-top: 80px;
+	margin-top: 10px;
+	margin-bottom: 53px;
 	font-family: "Circe", "Arial", sans-serif;
 	font-size: 36px;
 	line-height: 37px;
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, b, p {
 	&::after {
 		position: absolute;
 		content: "";
-		top: 60px;
+		top: 70px;
 		left: 50%;
 		margin-left: -72px;
 		width: 144px;

@@ -17,7 +17,7 @@
 	position: relative;
 	img {
 		width: 100%;
-
+		padding-top: 60px;
 	}
 }
 .about-elephant__content-wrapper {
@@ -35,7 +35,12 @@
 		width: 90%;
 		margin-top: 20px;
 		margin: 0 auto;
-			box-shadow: 0px 12px 51px 0px rgba(119, 119, 99, 0.21);
+		box-shadow: 0px 12px 51px 0px rgba(119, 119, 99, 0.21);
+	}
+	@include min1920 {
+		top: 55%;
+		left: 44%;
+		margin-right: 25%;
 	}
 }
 

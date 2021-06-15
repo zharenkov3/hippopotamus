@@ -80,8 +80,19 @@
 		@content
 	}
 }
+@mixin min768-max1920 {
+	@media (min-width: 768px) and (max-width: 1920px) {
+		@content
+	}
+}
+
 @mixin min1250-max1440 {
 	@media (min-width: 1250px) and (max-width: 1440px) {
+		@content
+	}
+}
+@mixin min1440-max1920 {
+	@media (min-width: 1440px) and (max-width: 1920px) {
 		@content
 	}
 }

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css/style.min.css">
-	<title>Name</title>
+	<title>Слоновья ферма «Гиппопотам»</title>
 </head>
 <body class="page-body">
 	<header class="page-header">
@@ -23,11 +23,11 @@
 
 			<nav class="page-header__nav main-nav">
 				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#">О нас</a></li>
-					<li class="main-nav__item"><a href="#">Наши услуги</a></li>
-					<li class="main-nav__item"><a href="#">Наши слоны</a></li>
-					<li class="main-nav__item"><a href="#">Блог</a></li>
-					<li class="main-nav__item"><a href="#">Контакты</a></li>
+					<li class="main-nav__item"><a href="#about">О нас</a></li>
+					<li class="main-nav__item"><a href="#services">Наши услуги</a></li>
+					<li class="main-nav__item"><a href="#about-elephant">Наши слоны</a></li>
+					<li class="main-nav__item"><a href="#blog">Блог</a></li>
+					<li class="main-nav__item"><a href="#contacts">Контакты</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -36,15 +36,15 @@
 		<section class="inner">
 			<div class="container">
 				<h1 class="inner__title">Слоновья ферма «Гиппопотам»&nbsp;—&nbsp;<br class="br-desktop">15 лет выращиваем и воспитываем слонов</h1>
-				<a href="#" class="button button--border-white">Больше о нас</a>
+				<a href="#form" class="button button--border-white">Больше о нас</a>
 			</div>
 		</section>
-		<section class="about-us">
+		<section class="about-us" id="about">
 			<h2 class="page-title">Кто мы такие?</h2>
 			<p class="page-description">Слоновья ферма <i>«Гиппопотам»</i> — уникальная в своем роде ферма. <br class="br-desktop">Мы не просто выращиваем слонов, но <a class="link--green" href="#">занимаемся их воспитанием</a> и обучением. <br class="br-desktop">Мы учим их жить в современном социуме и помогаем людям найти с ними общий язык.
 			</p>
 			<div class="about-us__numbers">
-				<div class="container--1440">
+				<div class="container">
 					<ul class="about-us__numbers-list">
 						<li class="about-us__numbers-item">
 							<p class="about-us__numbers-item__number">142</p>
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<h2 class="page-title">Наши услуги</h2>
 				<p class="page-description">Мы предоставляем полный спектр услуг: от катания на слонах до помощи оформления документов <br class="br-desktop">на их усыновление. Оставляйте заявку, наши специалисты помогут вам определиться и выбрать<br class="br-desktop"> лучшее предложение. </p>
@@ -83,12 +83,20 @@
 				<ul class="services-gallery__list">
 					<li class="services-gallery__item">
 						<div class="services-gallery__content-wrapper">
-							<h3 class="services-gallery__title">Слоновая <br>ферма</h3>
+							<h3 class="services-gallery__title">Слоновья <br>ферма</h3>
 							<p class="services-gallery__description">
 								Популярное развлечение и&nbsp;интересная активность для&nbsp;корпоративов и&nbsp;деловых встреч.
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/1-services@1x-mobile.jpg 1x,
+							img/1-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/1-services@1x-tablet.jpg 1x,
+							img/1-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/1-services@1x-desktop.jpg"
 							srcset="img/1-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -102,6 +110,14 @@
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/2-services@1x-mobile.jpg 1x,
+							img/2-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/2-services@1x-tablet.jpg 1x,
+							img/2-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/2-services@1x-desktop.jpg"
 							srcset="img/2-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -115,6 +131,14 @@
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/3-services@1x-mobile.jpg 1x,
+							img/3-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/3-services@1x-tablet.jpg 1x,
+							img/3-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/3-services@1x-desktop.jpg"
 							srcset="img/3-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -128,6 +152,14 @@
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/4-services@1x-mobile.jpg 1x,
+							img/4-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/4-services@1x-tablet.jpg 1x,
+							img/4-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/4-services@1x-desktop.jpg"
 							srcset="img/4-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -141,6 +173,14 @@
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/5-services@1x-mobile.jpg 1x,
+							img/5-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/5-services@1x-tablet.jpg 1x,
+							img/5-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/5-services@1x-desktop.jpg"
 							srcset="img/5-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -154,6 +194,14 @@
 							</p>
 						</div>
 						<picture class="services-gallery__photo">
+							<source srcset="img/6-services@1x-mobile.jpg 1x,
+							img/6-services@2x-mobile.jpg 2x"
+							media="(max-width: 321px)">
+
+							<source srcset="img/6-services@1x-tablet.jpg 1x,
+							img/6-services@2x-tablet.jpg 2x"
+							media="(max-width: 769px)">
+
 							<img src="img/6-services@1x-desktop.jpg"
 							srcset="img/6-services@2x-desktop.jpg 2x"
 							alt="Слон в комнате ломает мебель">
@@ -161,7 +209,7 @@
 					</li>
 				</ul>
 			</div>
-			<a href="#" class="button button--border-green">Хочу на слоновью ферму!</a>
+			<a href="#form" class="button button--border-green">Хочу на слоновью ферму!</a>
 		</section>
 		<section class="gallery">
 			<h2 class="page-title">Как всё это выглядит?</h2>
@@ -204,7 +252,7 @@
 				</picture>
 			</div>
 		</section>
-		<section class="about-elephant">
+		<section class="about-elephant" id="about-elephant">
 			<h2 class="page-title">Наши слоны</h2>
 			<picture class="about-elephant__picture">
 				<source srcset="img/about-elephant@1x-mobile.jpg 1x,
@@ -235,7 +283,7 @@
 					Слоны — лучшие друзья людей! Это социальные животные, которые легко поддаются дрессировке, верно служат и обладают эмпатией. Мы популяризируем семейство слоновьих и приглашаем всех желающих познакомиться с этими добрыми и милыми животными!
 				</p>
 			</div>
-			<a href="#" class="button button--border-green">Хочу на слоновью ферму!</a>
+			<a href="#form" class="button button--border-green">Хочу на слоновью ферму!</a>
 		</section>
 		<section class="reviews bg--light-green">
 			<div class="container">
@@ -246,8 +294,8 @@
 							<div class="reviews__user-pic">
 								<picture>
 									<img src="img/userpick-1@1x.jpg"
-									srcset="img/userpick-1@2x.jpg 2x"
-									srcset="img/userpick-1@3x.jpg 3x"
+									srcset="img/userpick-1@2x.jpg 2x,
+									img/userpick-1@3x.jpg 3x"
 									alt="Аватарка Ангелины">
 								</picture>
 
@@ -266,8 +314,7 @@
 							<div class="reviews__user-pic">
 								<picture>
 									<img src="img/userpick-2@1x.jpg"
-									srcset="img/userpick-2@2x.jpg 2x"
-									srcset="img/userpick-2@3x.jpg 3x"
+									srcset="img/userpick-2@2x.jpg 2x, img/userpick-2@3x.jpg 3x"
 									alt="Аватарка Вадима">
 								</picture>
 							</div>
@@ -285,8 +332,7 @@
 							<div class="reviews__user-pic">
 								<picture>
 									<img src="img/userpick-3@1x.jpg"
-									srcset="img/userpick-3@2x.jpg 2x"
-									srcset="img/userpick-3@3x.jpg 3x"
+									srcset="img/userpick-3@2x.jpg 2x, img/userpick-3@3x.jpg 3x"
 									alt="Аватарка Веры">
 								</picture>
 							</div>
@@ -330,24 +376,23 @@
 						<div class="teammate__card-wrapper">
 							<picture class="teammate__photo">
 								<img src="img/person-photo-1@1x-desktop.jpg"
-								srcset="img/person-photo-1@2x-desktop.jpg 2x"
-								srcset="img/person-photo-1@3x-desktop.jpg 3x"
+								srcset="img/person-photo-1@2x-desktop.jpg 2x, img/person-photo-1@3x-desktop.jpg 3x"
 								alt="Фотография Марты Смирновой">
 							</picture>
 							<div class="teammate__social-links-wrapper-bg-green">
 								<ul class="teammate__social-list">
-									<il class="teammate__social-link">
+									<li class="teammate__social-link">
 										<a class="social-link--facebook" href="https://ru-ru.facebook.com/" aria-label="Facebook"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--instagram" href="https://www.instagram.com/" aria-label="Instagram"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--youtube" href="https://www.youtube.com/" aria-label="Youtube"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--pinterest" href="https://www.pinterest.ru/" aria-label="pinterest"></a>
-									</il>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -362,24 +407,23 @@
 						<div class="teammate__card-wrapper">
 							<picture class="teammate__photo">
 								<img src="img/person-photo-2@1x-desktop.jpg"
-								srcset="img/person-photo-2@2x-desktop.jpg 2x"
-								srcset="img/person-photo-2@3x-desktop.jpg 3x"
+								srcset="img/person-photo-2@2x-desktop.jpg 2x, img/person-photo-2@3x-desktop.jpg 3x"
 								alt="Фотография Марты Смирновой">
 							</picture>
 							<div class="teammate__social-links-wrapper-bg-green">
 								<ul class="teammate__social-list">
-									<il class="teammate__social-link">
+									<li class="teammate__social-link">
 										<a class="social-link--facebook" href="https://ru-ru.facebook.com/" aria-label="Facebook"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--instagram" href="https://www.instagram.com/" aria-label="Instagram"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--youtube" href="https://www.youtube.com/" aria-label="Youtube"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--pinterest" href="https://www.pinterest.ru/" aria-label="pinterest"></a>
-									</il>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -392,24 +436,23 @@
 						<div class="teammate__card-wrapper">
 							<picture class="teammate__photo">
 								<img src="img/person-photo-3@1x-desktop.jpg"
-								srcset="img/person-photo-3@2x-desktop.jpg 2x"
-								srcset="img/person-photo-3@3x-desktop.jpg 3x"
+								srcset="img/person-photo-3@2x-desktop.jpg 2x, img/person-photo-3@3x-desktop.jpg 3x"
 								alt="Фотография Марты Смирновой">
 							</picture>
 							<div class="teammate__social-links-wrapper-bg-green">
 								<ul class="teammate__social-list">
-									<il class="teammate__social-link">
+									<li class="teammate__social-link">
 										<a class="social-link--facebook" href="https://ru-ru.facebook.com/" aria-label="Facebook"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--instagram" href="https://www.instagram.com/" aria-label="Instagram"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--youtube" href="https://www.youtube.com/" aria-label="Youtube"></a>
-									</il>
-									<il class="teammate__social-link">
+									</li>
+									<li class="teammate__social-link">
 										<a class="social-link--pinterest" href="https://www.pinterest.ru/" aria-label="pinterest"></a>
-									</il>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -425,7 +468,7 @@
 			<div class="container">
 				<h2 class="page-title">Наши успехи</h2>
 				<p class="page-description">
-					Мы каждый день разрабатываем новые учебные методики, благодаря которым наши слоны становятся воспитаннее и умнее. Посмотрите, чему научились наши слоны за последний год!
+					Мы каждый день разрабатываем новые учебные методики, благодаря которым наши слоны становятся воспитаннее и умнее. Посмотрите, чему научились наши слоны за последний год!
 				</p>
 				<ul class="successes__gallery-list">
 					<li class="successes__gallery-item successes__gallery-item--wrapper ">
@@ -557,7 +600,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="blog">
+		<section class="blog" id="blog">
 			<div class="container">
 				<h2 class="page-title">Наш блог</h2>
 				<ul class="blog__list">
@@ -619,10 +662,10 @@
 						</picture>
 					</li>
 				</ul>
-				<a href="#" class="button button--color-green">Хочу на слоновью ферму!</a>
+				<a href="#form" class="button button--color-green">Хочу на слоновью ферму!</a>
 			</div>
 		</section>
-		<section class="contacts bg--light-green">
+		<section class="contacts bg--light-green" id="contacts">
 			<h2 class="page-title">Связаться с нами</h2>
 			<div class="container">
 				<div class="contacts__section-call">
@@ -630,20 +673,19 @@
 					<a href="mailto:team@emailmatrix.ru  ">team@emailmatrix.ru</a>
 				</div>
 				<section class="contacts__adress-list">
-					<p class="adress-item">
+					<h2 class="visually-hidden">Адреса наших ферм</h2>
+					<div class="adress-item">
 						<p class="adress-item__office">МОСКВА ВОСТОК </p>
 						<p class="adress-item__location">109428, 1-й Вязовский пр-д., 4, стр. 19</p>
-						<br>
-					</p>
-					<p class="adress-item">
+					</div>
+					<div class="adress-item">
 						<p class="adress-item__office">МОСКВА ЮГ</p>
 						<p class="adress-item__location">117403, 31-й км МКАД, влад. 12</p>
-						<br>
-					</p>
-					<p class="adress-item">
+					</div>
+					<div class="adress-item">
 						<p class="adress-item__office">МОСКВА ТЕРМИНАЛ М</p>
 						<p class="adress-item__location">117403, 31-й км МКАД, Востряковский пр., д. 10Г</p>
-					</p>
+					</div>
 				</section>
 			</div>
 		</section>
@@ -651,8 +693,8 @@
 			<div class="container">
 				<h2 class="page-title">Оставайтесь с нами</h2>
 				<p class="page-description">Подпишитесь на наши рассылки, чтобы быть всегда в курсе дел команды и ставить лайки нашим питомцам.</p>
-				<form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
-					<input type="text"name="name"value="" placeholder="Семён">
+				<form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post" id="form">
+					<input type="text" name="name" value="" placeholder="Семён">
 					<input type="email" name="e-mail" value="" placeholder="small-elephant@ya.ru">
 					<button class="button button--color-green" type="submit">Подписаться</button>
 				</form>
@@ -673,9 +715,9 @@
 					<li class="footer__social-item">
 						<a class="social-link--facebook" href="https://ru-ru.facebook.com/" aria-label="Facebook"></a>
 					</li>
-					<il class="footer__social-item">
+					<li class="footer__social-item">
 						<a class="social-link--instagram" href="https://www.instagram.com/" aria-label="Instagram"></a>
-					</il>
+					</li>
 					<li class="footer__social-item">
 						<a class="social-link--youtube" href="https://www.youtube.com/" aria-label="Youtube"></a>
 					</li>

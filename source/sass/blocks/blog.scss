@@ -1,6 +1,6 @@
 .blog {
-	margin-top: 60px;
-	margin-bottom: 100px;
+	margin-top: 68px;
+	margin-bottom: 90px;
 	.container {
 		max-width: 1238px;
 		@include max1250 {
@@ -11,6 +11,7 @@
 	}
 }
 .blog__list {
+	padding-top: 55px;
 	@include list-reset(0px);
 	display: flex;
 	justify-content: space-between;
@@ -51,11 +52,13 @@
 	}
 }
 .blog__item-title {
+	margin-bottom: 10px;
 	font-size: 22px;
 	line-height: auto;
 	font-weight: 400;
 }
 .blog__item-intro {
+	margin-bottom: 5px;
 	font-family: "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
