@@ -158,16 +158,16 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
-// docs
+// build
 
-const docs = gulp.series(
+const build = gulp.series(
   clean,
   copy,
   optimizeImages,
   gulp.parallel(styles, html, sprite, createWebp)
   );
 
-exports.docs = docs;
+exports.build = build;
 
 // Default
 
