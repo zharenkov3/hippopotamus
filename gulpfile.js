@@ -24,7 +24,7 @@ const styles = () => {
   .pipe(postcss([autoprefixer(), csso()]))
   .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("build/css"))
+  .pipe(gulp.dest("docs/css"))
   .pipe(sync.stream());
 };
 
@@ -36,7 +36,7 @@ const html = () => {
   return gulp
   .src("source/**/*.html")
   .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("docs"));
 };
 
 exports.html = html;
@@ -55,13 +55,13 @@ const optimizeImages = () => {
       }),
       ])
     )
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("docs/img"));
 };
 
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}").pipe(gulp.dest("build/img"));
+  return gulp.src("source/img/**/*.{png,jpg,svg}").pipe(gulp.dest("docs/img"));
 };
 
 exports.copyImages = copyImages;
@@ -72,7 +72,7 @@ const createWebp = () => {
   return gulp
   .src("source/img/**/*.{png,jpg}")
   .pipe(webp({ quality: 90 }))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("docs/img"));
 };
 
 exports.createWebp = createWebp;
@@ -88,7 +88,7 @@ const sprite = () => {
     })
     )
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
+  .pipe(gulp.dest("docs/img"));
 };
 
 exports.sprite = sprite;
@@ -111,7 +111,7 @@ const copy = (done) => {
     ],
     { base: "source" }
     )
-  .pipe(gulp.dest("build"));
+  .pipe(gulp.dest("docs"));
   done();
 };
 
@@ -122,7 +122,7 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del("docs");
 };
 
 exports.clean = clean;
@@ -132,7 +132,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: "build",
+      baseDir: "docs",
     },
     cors: true,
     notify: false,
@@ -158,16 +158,16 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 };
 
-// Build
+// docs
 
-const build = gulp.series(
+const docs = gulp.series(
   clean,
   copy,
   optimizeImages,
   gulp.parallel(styles, html, sprite, createWebp)
   );
 
-exports.build = build;
+exports.docs = docs;
 
 // Default
 

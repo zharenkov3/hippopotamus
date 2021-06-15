@@ -1,7 +1,7 @@
 {
   "name": "Hippopotamus",
   "private": true,
-  "description": "Адаптивный лендинг слоновьей фермы",
+  "description": "Адаптивный лендинг Гиппопотам",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
