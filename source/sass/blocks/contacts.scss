@@ -7,7 +7,10 @@
 		display: flex;
 		justify-content: space-between;
 		max-width: 1116px;
-		@include max1024 {
+		@include max1250 {
+			justify-content: space-evenly;
+		}
+		@include max768 {
 			flex-direction: column;
 			align-items: center;
 			margin: 0 auto;
@@ -28,10 +31,16 @@
 			font-size: 28px;
 			margin-left: 70px;
 		}
+		@include max768 {
+			font-size: 21px;
+			line-height: 35px;
+			margin-left: 50px;
+		}
+
 	}
 }
 .contacts__section-call {
-	@include max1024 {
+	@include max768 {
 		order: 2;
 		margin-top: 50px;
 	}
@@ -41,6 +50,10 @@
 		@include max1024 {
 			margin-bottom: 20px;
 		}
+		@include max768 {
+			margin-bottom: 10px;
+		}
+
 	}
 	max-width: 487px;
 	a[href^="tel:"] {
@@ -56,12 +69,6 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: 0 0;
-			@include max1024 {
-				top: 5px;
-				left: -60px;
-				width: 40px;
-				height: 40px;
-			}
 		}
 	}
 	a[href^="mailto:"] {
@@ -86,15 +93,26 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: 0 0;
+		}
+		&:hover:after {
+			display: none;
+		}
+	}
+	a[href^="tel:"],
+	a[href^="mailto:"] {
+		&:before {
 			@include max1024 {
 				top: 5px;
 				left: -60px;
 				width: 40px;
 				height: 40px;
 			}
-		}
-		&:hover:after  {
-			display: none;
+			@include max768 {
+				top: 5px;
+				left: -45px;
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 }
